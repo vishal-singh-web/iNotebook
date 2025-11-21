@@ -1,9 +1,9 @@
 import './App.css';
-import About from './Components/about';
-import Home from './Components/home';
-import Navbar from './Components/Navbar';
-import Login from './Components/Login';
-import Signup from './Components/Signup';
+import About from './Components/about.js';
+import Home from './Components/home.js';
+import Navbar from './Components/Navbar.js';
+import Login from './Components/Login.js';
+import Signup from './Components/Signup.js';
 import {
   BrowserRouter as Router,
   Route,
