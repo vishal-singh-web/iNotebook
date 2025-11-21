@@ -17,7 +17,7 @@ function Signup() {
             return () => clearTimeout(timeout);
         }
     }, [showAlert]);
-    const host = 'https://backend-aqdnyhrw6-vishalucifer-gmailcoms-projects.vercel.app'
+    const host = 'https://inotebook-backend-glih.onrender.com'
     let navigate = useNavigate();
     const [form, setform] = useState({ name: '', email: '', password: '' })
     const onchange = (e) => {

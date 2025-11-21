@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from "react-router-dom";
-import { Alert } from './Alert';
 
 function Login() {
     const [msg, setMsg] = useState('');
@@ -18,7 +17,7 @@ function Login() {
             return () => clearTimeout(timeout);
         }
     }, [showAlert]);
-    const host = 'https://backend-aqdnyhrw6-vishalucifer-gmailcoms-projects.vercel.app'
+    const host = 'https://inotebook-backend-glih.onrender.com'
     let navigate = useNavigate();
     const [form, setform] = useState({ email: '', password: '' })
     const onchange = (e) => {

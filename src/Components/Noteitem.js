@@ -4,7 +4,7 @@ import { NoteContext } from "../Contexts/NoteState";
 
 function Noteitem(props) {
     const { note } = props;
-    const host = 'https://backend-aqdnyhrw6-vishalucifer-gmailcoms-projects.vercel.app'
+    const host = 'https://inotebook-backend-glih.onrender.com'
     const [current, setCurrent] = useState({ title: note.title, description: note.description, tags: note.tags });
     const noteContext = useContext(NoteContext);
     const { setNote, getData } = noteContext;

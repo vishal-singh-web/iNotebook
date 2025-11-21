@@ -11,7 +11,7 @@ function Addnote(props) {
     const handleclick = (e) => {
         e.preventDefault();
         async function getData() {
-            const url = "https://backend-aqdnyhrw6-vishalucifer-gmailcoms-projects.vercel.app/api/notes/addnote";
+            const url = "https://inotebook-backend-glih.onrender.com/api/notes/addnote";
             try {
                 const response = await fetch(url, {
                     method: "POST",
