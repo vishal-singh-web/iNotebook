@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import { NoteContext } from '../Contexts/NoteState';
+import { NoteContext } from '../Contexts/NoteState.js';
 import Noteitem from './Noteitem.js'
 
 function Allnotes(props) {

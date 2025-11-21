@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { NoteContext } from '../Contexts/NoteState';
+import { NoteContext } from '../Contexts/NoteState.js';
 
 
 function Navbar() {

@@ -1,5 +1,5 @@
 import { useContext, useRef, useState } from "react";
-import { NoteContext } from "../Contexts/NoteState";
+import { NoteContext } from "../Contexts/NoteState.js";
 
 
 function Noteitem(props) {
