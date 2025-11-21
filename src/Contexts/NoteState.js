@@ -7,7 +7,7 @@ const NoteState = (props) => {
   const [notes, setNotes] = useState([]);
 
   async function getData() {
-    const url = "https://backend-aqdnyhrw6-vishalucifer-gmailcoms-projects.vercel.app/api/notes/fetchnotes";
+    const url = "https://inotebook-backend-glih.onrender.com/api/notes/fetchnotes";
     try {
       const response = await fetch(url, {
         method: "GET",
