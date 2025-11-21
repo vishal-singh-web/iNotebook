@@ -7,7 +7,7 @@ const NoteState = (props) => {
   const [notes, setNotes] = useState([]);
 
   async function getData() {
-    const url = "https://inotebook-backend-glih.onrender.com/api/notes/fetchnotes";
+    const url = "https://inotebook-backend-glih.onrender.com/api/notes/fetchnote";
     try {
       const response = await fetch(url, {
         method: "GET",
