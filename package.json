@@ -20,6 +20,8 @@
     "express-validator": "^7.3.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.19.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
