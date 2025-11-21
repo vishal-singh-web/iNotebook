@@ -8,15 +8,19 @@ import express, { json } from 'express';
 const app = express()
 
 app.use(json())
+app.use(cors());
 app.use(cors({
-  origin: 'http://localhost:3000', // frontend origin during local dev
+  origin: 'http://localhost:3000', // or ['http://localhost:3000', ...] for more
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  credentials: true, // if you use cookies or auth headers
+  credentials: true,
 }));
-app.use('*',cors());
+
 
 import authRoutes from './routes/auth.js';
 import notesRoutes from './routes/notes.js';
 
 app.use('/api/auth', authRoutes);
 app.use('/api/notes', notesRoutes);
+app.listen(process.env.PORT || 10000, () => {
+  console.log(`Server listening on port ${process.env.PORT || 10000}`);
+});
