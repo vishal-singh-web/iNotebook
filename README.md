@@ -1,71 +1,129 @@
-# Getting Started with Create React App
+# iNotebook ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **Your notes on the cloud. Simple, secure, and accessible everywhere.**
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Demo
 
-### `npm start`
+Try it online: [iNotebook Live](https://i-notebook-teal.vercel.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📖 Table of Contents
 
-### `npm test`
+- [About](#about)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Scripts](#available-scripts)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📝 About
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**iNotebook** is a modern, full stack **MERN (MongoDB, Express.js, React, Node.js)** note-taking app.  
+Create, edit, and securely manage your notes from any device with a powerful, beautiful interface.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ✨ Features
 
-### `npm run eject`
+- Create, edit, and delete notes instantly
+- Secure cloud storage (MongoDB)
+- JWT (JSON Web Token) authentication for user security
+- Password encryption using `crypt`
+- Session persistence with localStorage
+- Responsive design for all devices
+- Progressive Web App (offline support)
+- Fast, modern UI built with React
+- 100% browser-based
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠 Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Frontend:** React (Create React App), HTML, CSS, JavaScript, LocalStorage
+- **Backend:** Node.js, Express.js, JWT authentication, password encryption with `crypt`
+- **Database:** MongoDB
+- **Other:** LocalStorage for session and note caching
+- **Deployment:** 
+  - Frontend: Vercel
+  - Backend: Render (from [`inotebook-backend`](https://github.com/vishal-singh-web/inotebook-backend) repo)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🚀 Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone and run locally (both client and server):
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Frontend
+git clone https://github.com/vishal-singh-web/iNotebook.git
+cd iNotebook
+npm install
+npm start
 
-### Code Splitting
+text
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+For backend/API setup, visit: [`inotebook-backend`](https://github.com/vishal-singh-web/inotebook-backend)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🗂 Available Scripts
 
-### Making a Progressive Web App
+| Command       | Description                           |
+|---------------|---------------------------------------|
+| npm start     | Run development server                |
+| npm test      | Launch test runner                    |
+| npm run build | Build app for production              |
+| npm run eject | Eject configuration (advanced)        |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🌍 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Frontend:** Deployed on Vercel  
+- **Backend:** Deployed on Render ([`inotebook-backend`](https://github.com/vishal-singh-web/inotebook-backend))
 
-### Deployment
+To deploy frontend:
+npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+text
+Upload the `/build` folder to your preferred static host.
 
-### `npm run build` fails to minify
+Backend is live on Render; update it via the `inotebook-backend` repo.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# iNotebook
+Read more: [Create React App Deployment Guide](https://facebook.github.io/create-react-app/docs/deployment)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repo
+2. Create your branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add feature'`)
+4. Push (`git push origin feature/fooBar`)
+5. Submit a Pull Request
+
+---
+
+## 📄 License
+
+**This project is NOT licensed.**  
+Currently, there is *no license* associated with this repository.  
+All rights reserved by the author.
+
+---
+
+## 👤 Contact
+
+Made by [Vishal Singh](https://github.com/vishal-singh-web)  
+Have questions? [Open an issue](https://github.com/vishal-singh-web/iNotebook/issues)
+
+---
